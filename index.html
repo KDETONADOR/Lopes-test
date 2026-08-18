@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d0d0d">
+  <meta name="description" content="Lopes Tile Guy Corp — professional tile installation across New England. Get a quick preliminary labor estimate online.">
+  <title>Lopes Tile Guy Corp | Tile Installation & Estimate</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Lopes Tile Guy Corp home">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span>
+        </span>
+        <span class="brand-text">
+          <strong>LOPES TILE GUY</strong>
+          <small>CORP</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#services" data-i18n="navServices">Services</a>
+        <a href="#calculator" data-i18n="navEstimate">Estimate</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <div class="lang-switch" aria-label="Language">
+        <button type="button" id="btnEN" class="active" aria-pressed="true">EN</button>
+        <button type="button" id="btnPT" aria-pressed="false">PT</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-grid-pattern" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="eyebrow" data-i18n="heroEyebrow">Professional Tile Installation</div>
+        <h1 data-i18n="heroTitle">Precision tile work built to last.</h1>
+        <p data-i18n="heroText">Professional installation for bathrooms, showers, floors, backsplashes, and specialty tile projects across New England.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#calculator" data-i18n="heroEstimate">Get an Instant Estimate</a>
+          <a class="btn btn-outline" href="tel:+19783982397"><span data-i18n="heroCall">Call</span> (978) 398-2397</a>
+        </div>
+        <div class="hero-note" data-i18n="heroNote">Fast preliminary labor estimate • Final quote after project review</div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div><strong data-i18n="trust1Title">Detail-Oriented</strong><span data-i18n="trust1Text">Clean lines and precise finishes</span></div>
+        <div><strong data-i18n="trust2Title">Reliable</strong><span data-i18n="trust2Text">Clear communication and scheduling</span></div>
+        <div><strong data-i18n="trust3Title">New England</strong><span data-i18n="trust3Text">Residential and commercial projects</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow dark" data-i18n="servicesEyebrow">What We Install</div>
+          <h2 data-i18n="servicesTitle">Tile installation for the spaces that matter.</h2>
+          <p data-i18n="servicesText">From clean everyday layouts to detailed specialty work, every project is approached with careful preparation and finish quality.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-number">01</div>
+            <h3 data-i18n="service1Title">Bathrooms & Showers</h3>
+            <p data-i18n="service1Text">Shower walls, bathroom floors, waterproofing, niches, and trim details.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-number">02</div>
+            <h3 data-i18n="service2Title">Floor Tile</h3>
+            <p data-i18n="service2Text">Professional tile installation with preparation, layout, leveling, and clean finishing.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-number">03</div>
+            <h3 data-i18n="service3Title">Kitchen Backsplash</h3>
+            <p data-i18n="service3Text">Straight, mosaic, glass, marble, and detailed backsplash installations.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-number">04</div>
+            <h3 data-i18n="service4Title">Specialty Tile</h3>
+            <p data-i18n="service4Text">Large-format porcelain, herringbone, diagonal layouts, mosaic, marble, and glass tile.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="calculator-section" id="calculator">
+      <div class="container">
+        <div class="calculator-heading">
+          <div>
+            <div class="eyebrow" data-i18n="calcEyebrow">Quick Project Calculator</div>
+            <h2 data-i18n="calcTitle">Get a preliminary labor estimate.</h2>
+            <p data-i18n="calcIntro">Enter your project details below. This tool gives a starting estimate so pricing is easier to understand before an on-site review.</p>
+          </div>
+          <div class="estimate-badge">
+            <span data-i18n="estimateBadgeTop">LABOR</span>
+            <strong data-i18n="estimateBadgeBottom">ESTIMATE</strong>
+          </div>
+        </div>
+
+        <div class="calculator-shell">
+          <div class="calculator-form">
+            <div class="calc-block">
+              <div class="calc-step">
+                <span>01</span>
+                <div>
+                  <h3 data-i18n="stepMeasurements">Measurements</h3>
+                  <p data-i18n="stepMeasurementsHelp">Use length × width or enter total square feet directly.</p>
+                </div>
+              </div>
+
+              <div class="field-grid">
+                <label>
+                  <span data-i18n="lengthLabel">Length (ft)</span>
+                  <input id="length" inputmode="decimal" type="number" min="0" step="0.1" value="10">
+                </label>
+                <label>
+                  <span data-i18n="widthLabel">Width / height (ft)</span>
+                  <input id="width" inputmode="decimal" type="number" min="0" step="0.1" value="10">
+                </label>
+              </div>
+              <label>
+                <span data-i18n="manualSqftLabel">Or enter total square feet</span>
+                <input id="sqftManual" inputmode="decimal" type="number" min="0" step="0.1" data-i18n-placeholder="optionalPlaceholder" placeholder="Optional">
+              </label>
+            </div>
+
+            <div class="calc-block">
+              <div class="calc-step">
+                <span>02</span>
+                <div>
+                  <h3 data-i18n="stepService">Service Type</h3>
+                  <p data-i18n="stepServiceHelp">Choose the tile installation category.</p>
+                </div>
+              </div>
+              <label>
+                <span data-i18n="serviceLabel">Installation</span>
+                <select id="service">
+                  <option value="8.5" data-en="Basic floor tile — $8.50/sq ft" data-pt="Piso básico — $8.50/sq ft">Basic floor tile — $8.50/sq ft</option>
+                  <option value="12.5" data-en="Porcelain / Large Format — $12.50/sq ft" data-pt="Porcelanato / Large Format — $12.50/sq ft">Porcelain / Large Format — $12.50/sq ft</option>
+                  <option value="20" data-en="Shower Walls — $20.00/sq ft" data-pt="Paredes de shower — $20.00/sq ft">Shower Walls — $20.00/sq ft</option>
+                  <option value="22" data-en="Mosaic — $22.00/sq ft" data-pt="Mosaico — $22.00/sq ft">Mosaic — $22.00/sq ft</option>
+                  <option value="18" data-en="Glass Tile — $18.00/sq ft" data-pt="Glass Tile — $18.00/sq ft">Glass Tile — $18.00/sq ft</option>
+                  <option value="19" data-en="Marble Tile — $19.00/sq ft" data-pt="Marble Tile — $19.00/sq ft">Marble Tile — $19.00/sq ft</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="calc-block">
+              <div class="calc-step">
+                <span>03</span>
+                <div>
+                  <h3 data-i18n="stepPrep">Surface Preparation</h3>
+                  <p data-i18n="stepPrepHelp">Preparation is separate from tile installation and depends on the condition of the surface.</p>
+                </div>
+              </div>
+              <label>
+                <span data-i18n="prepLabel">Preparation level</span>
+                <select id="prep">
+                  <option value="0" data-en="No additional preparation" data-pt="Sem preparação adicional">No additional preparation</option>
+                  <option value="1.5" data-en="Basic prep — $1.50/sq ft (min. $150)" data-pt="Preparação básica — $1.50/sq ft (mín. $150)">Basic prep — $1.50/sq ft (min. $150)</option>
+                  <option value="3" data-en="Standard prep — $3.00/sq ft (min. $150)" data-pt="Preparação padrão — $3.00/sq ft (mín. $150)">Standard prep — $3.00/sq ft (min. $150)</option>
+                  <option value="5" data-en="Heavy prep — $5.00/sq ft (min. $150)" data-pt="Preparação pesada — $5.00/sq ft (mín. $150)">Heavy prep — $5.00/sq ft (min. $150)</option>
+                </select>
+              </label>
+              <p class="field-note" data-i18n="prepNotice">Final preparation cost may change after site inspection.</p>
+            </div>
+
+            <div class="calc-block">
+              <div class="calc-step">
+                <span>04</span>
+                <div>
+                  <h3 data-i18n="stepExtras">Project Extras</h3>
+                  <p data-i18n="stepExtrasHelp">Select any additional work that applies to the project.</p>
+                </div>
+              </div>
+
+              <div class="check-grid">
+                <label class="check-card"><input type="checkbox" id="waterproof"><span><strong data-i18n="waterproofTitle">Waterproofing</strong><small>+ $3.50/sq ft</small></span></label>
+                <label class="check-card"><input type="checkbox" id="demo"><span><strong data-i18n="demoTitle">Demolition</strong><small>+ $3.50/sq ft</small></span></label>
+                <label class="check-card"><input type="checkbox" id="leveling"><span><strong data-i18n="levelingTitle">Floor leveling</strong><small>+ $2.50/sq ft</small></span></label>
+                <label class="check-card"><input type="checkbox" id="herringbone"><span><strong data-i18n="patternTitle">Herringbone / diagonal</strong><small data-i18n="patternRate">+ 25% installation</small></span></label>
+                <label class="check-card"><input type="checkbox" id="niche"><span><strong data-i18n="nicheTitle">Niche</strong><small>+ $250</small></span></label>
+                <label class="check-card"><input type="checkbox" id="schluter"><span><strong>Schluter trim</strong><small>+ $150</small></span></label>
+                <label class="check-card"><input type="checkbox" id="pickup"><span><strong data-i18n="pickupTitle">Material pickup</strong><small>+ $125</small></span></label>
+              </div>
+
+              <label class="miles-field">
+                <span data-i18n="milesLabel">Distance to job (miles)</span>
+                <input id="miles" inputmode="numeric" type="number" min="0" step="1" value="10">
+              </label>
+              <p class="field-note" data-i18n="travelNotice">The first 10 miles are included. After 10 miles: + $2 per additional mile.</p>
+            </div>
+
+            <div class="calc-block">
+              <div class="calc-step">
+                <span>05</span>
+                <div>
+                  <h3 data-i18n="stepMaterials">Materials — Optional</h3>
+                  <p data-i18n="stepMaterialsHelp">Materials are not automatically included because product prices vary.</p>
+                </div>
+              </div>
+              <label>
+                <span data-i18n="materialsLabel">Estimated materials ($)</span>
+                <input id="materials" inputmode="decimal" type="number" min="0" step="0.01" data-i18n-placeholder="materialsPlaceholder" placeholder="Example: 750">
+              </label>
+              <p class="field-note" data-i18n="materialsNotice">Only enter an amount if you want to include a rough materials estimate. It remains separate from labor.</p>
+            </div>
+
+            <button id="calcButton" class="btn btn-gold calculate-btn" type="button" data-i18n="calculateButton">Calculate Estimate</button>
+            <div id="error" class="error-box" role="alert" aria-live="polite"></div>
+          </div>
+
+          <aside class="result-panel" aria-live="polite">
+            <div class="result-top">
+              <span class="result-kicker" data-i18n="resultKicker">PROJECT ESTIMATE</span>
+              <h3 data-i18n="resultTitle">Preliminary Pricing</h3>
+              <p data-i18n="resultSubtitle">Labor estimate based on the selections entered.</p>
+            </div>
+
+            <div id="breakdown" class="breakdown"></div>
+
+            <div class="result-total">
+              <span data-i18n="laborTotalLabel">Labor total</span>
+              <strong id="laborTotal">$0.00</strong>
+            </div>
+
+            <div id="materialsResultWrap" class="materials-result" hidden>
+              <div class="result-line">
+                <span data-i18n="estimatedMaterialsLabel">Estimated materials</span>
+                <strong id="materialsTotal">$0.00</strong>
+              </div>
+              <div class="project-total">
+                <span data-i18n="projectTotalLabel">Estimated project total</span>
+                <strong id="projectTotal">$0.00</strong>
+              </div>
+            </div>
+
+            <div class="disclaimer">
+              <strong data-i18n="disclaimerTitle">Preliminary estimate only.</strong>
+              <p data-i18n="disclaimerText">Final pricing may change after project review based on substrate condition, layout, cuts, tile selection, project access, scope changes, and actual material costs.</p>
+            </div>
+
+            <a class="btn btn-outline-gold result-contact" href="tel:+19783982397">
+              <span data-i18n="discussProject">Discuss Your Project</span>
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <div class="eyebrow dark" data-i18n="contactEyebrow">Ready for the Next Step?</div>
+          <h2 data-i18n="contactTitle">Tell us about your tile project.</h2>
+          <p data-i18n="contactText">Use the calculator for a quick starting point, then contact Lopes Tile Guy Corp for a project review and final quote.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="contact-card" href="tel:+19783982397">
+            <span data-i18n="phoneLabel">Phone</span>
+            <strong>(978) 398-2397</strong>
+          </a>
+          <a class="contact-card" href="https://www.instagram.com/lopes_tile_guy_corp/" target="_blank" rel="noopener noreferrer">
+            <span>Instagram</span>
+            <strong>@lopes_tile_guy_corp</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <strong>LOPES TILE GUY CORP</strong>
+        <span data-i18n="footerArea">Serving New England</span>
+      </div>
+      <span>© <span id="year"></span> Lopes Tile Guy Corp</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
